@@ -1,6 +1,6 @@
 #!/bin/bash
 
-helper()
+helper
 
 # GitHub API URL
 API_URL="https://api.github.com"
@@ -39,9 +39,11 @@ function list_users_with_read_access {
 }
 
 function helper {
-expected_cmd_args=2
-if [ $# -ne $expected_cmd_args]; then
-echo"please provide required arguments"
+    local expected_cmd_args=2
+    if [ $# -ne $expected_cmd_args]; then
+        echo"please provide required arguments"
+        exit 1
+    fi
 }
 
 # Main script
