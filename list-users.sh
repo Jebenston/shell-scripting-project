@@ -1,5 +1,14 @@
 #!/bin/bash
 
+
+function helper {
+    local expected_cmd_args=2
+    if [ $# -ne $expected_cmd_args]; then
+        echo"please provide required arguments"
+        exit 1
+    fi
+}
+
 helper "$@"
 
 # GitHub API URL
@@ -38,13 +47,6 @@ function list_users_with_read_access {
     fi
 }
 
-function helper {
-    local expected_cmd_args=2
-    if [ $# -ne $expected_cmd_args]; then
-        echo"please provide required arguments"
-        exit 1
-    fi
-}
 
 # Main script
 
