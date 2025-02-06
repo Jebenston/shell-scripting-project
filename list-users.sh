@@ -9,7 +9,7 @@
 function helper {
     local expected_cmd_args=2
     if [ $# -ne $expected_cmd_args]; then
-        echo "Provide required arguments: <repo_owner> <repo_name>"
+        echo "Provide required the arguments: <repo_owner> <repo_name>"
         exit 1
     fi
 }
