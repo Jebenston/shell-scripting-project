@@ -3,7 +3,7 @@
 # About: This will give users who have permission to access this repository as output
 # Input: Repo_owner & Repo_name
 #
-# Owner: Jebenston
+# Owner: Joseph Jebenston
 ##########################################################################################
 
 function helper {
